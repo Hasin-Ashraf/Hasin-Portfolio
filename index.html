@@ -12,13 +12,17 @@
     <header>
         <div class="container header-content">
             <div class="header-left">
-                <h1>Hasin Ashraf Rana</h1>
-                <p>Cyber Security Engineer</p>
+                <h1>Hasin</h1>
             </div>
             <div class="header-right">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <nav>
-                    <ul>
-                        <li><a href="#about" class="tab active">About Me</a></li>
+                    <ul class="nav-links">
+                        <li><a href="#about" class="tab active">About</a></li>
                         <li><a href="#research" class="tab">Research</a></li>
                         <li><a href="#achievements" class="tab">Achievements</a></li>
                         <li><a href="#experience" class="tab">Experience</a></li>
@@ -32,8 +36,12 @@
     <main>
         <div id="about" class="tab-content active">
             <div class="container">
+                <div class="intro-section">
+                    <h1 class="full-name"><span>Hasin</span> Ashraf Rana.</h1>
+                    <p class="occupation-title">Cyber Security Engineer</p>
+                </div>
                 <section>
-                    <h2>About Me</h2>
+                    <h2>About</h2>
                     <div class="about-wrapper">
                         <div class="bio-details">
                             <p>A SOC (Security operations center) analyst with more than 2 years of experience in integrating security related technologies according to the organizational business need. Presently working in Prime Bank limited as an Offensive security and SOC analyst at information security division. Previously worked as a Cyber security engineer at Techforing Limited which was a global cybersecurity company who provide services to customers who are located at USA , Canada , Dubai, Czech Republic , England and Bangladesh.</p>
@@ -134,6 +142,8 @@
     <script>
         const tabs = document.querySelectorAll('.tab');
         const tabContents = document.querySelectorAll('.tab-content');
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
 
         tabs.forEach(tab => {
             tab.addEventListener('click', (e) => {
@@ -147,7 +157,14 @@
 
                 const target = document.querySelector(tab.getAttribute('href'));
                 target.classList.add('active');
+
+                // Close the menu on tab click
+                nav.classList.remove('active');
             });
+        });
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
         });
     </script>
 </body>
