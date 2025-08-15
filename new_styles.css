@@ -426,9 +426,9 @@ section {
 }
 
 .research-image {
-    max-width: 320px;
-    width: 100%;
+    width: auto;
     height: auto;
+    max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0,0,0,0.10);
 }
@@ -499,8 +499,10 @@ section {
     justify-content: center;
 }
 .gallery-images img {
-    max-width: 260px;
-    width: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
     border-radius: 14px;
     box-shadow: 0 1px 10px rgba(0,0,0,0.13);
     margin-bottom: 16px;
