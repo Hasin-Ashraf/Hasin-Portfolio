@@ -437,3 +437,29 @@ section {
         margin-bottom: 10px;
     }
 }
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-image: linear-gradient(to right, #007bff, #0056b3); /* Gradient background */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Slightly more rounded corners */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-image 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Subtle shadow */
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, #0056b3, #003f7f); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0); /* Press down effect */
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
