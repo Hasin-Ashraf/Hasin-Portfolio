@@ -433,6 +433,84 @@ section {
     box-shadow: 0 1px 6px rgba(0,0,0,0.10);
 }
 
+.orphanage-info {
+    background: #020202;
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.orphanage-info h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.4em;
+}
+.orphanage-info .subtitle {
+    font-size: 1em;
+    color: #555;
+    font-style: italic;
+    margin-left: 8px;
+}
+.donation-block {
+    background: #020202;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 18px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.donation-block .highlight {
+    color: #d35400;
+    font-weight: bold;
+}
+.project-block {
+    background: #020202;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.orphanage-info ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.orphanage-info a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.orphanage-gallery {
+    margin-top: 28px;
+    background: #020202;
+    border-radius: 12px;
+    padding: 18px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.orphanage-gallery h4 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+.gallery-images {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery-images img {
+    max-width: 260px;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.13);
+    margin-bottom: 16px;
+    transition: transform 0.2s;
+}
+.gallery-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
     .header-content {
