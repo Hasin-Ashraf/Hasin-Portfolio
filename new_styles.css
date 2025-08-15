@@ -361,6 +361,78 @@ section {
     break-inside: avoid-column; /* Prevent list items from breaking across columns */
 }
 
+.research-list {
+    background: #020202;
+    border-radius: 12px;
+    padding: 24px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    list-style: none;
+}
+.research-list li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+/* Add to new_styles.css */
+.research-ideas {
+    background: #020202;
+    border-radius: 12px;
+    padding: 24px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-top: 16px;
+}
+.research-ideas .author {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    color: #333;
+}
+.research-ideas .year {
+    color: #007bff;
+}
+.research-ideas .idea-block {
+    margin-bottom: 24px;
+}
+.research-ideas h3 {
+    margin-top: 0;
+    color: #0056b3;
+}
+.research-ideas .highlight {
+    background: #494129;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.research-ideas .contact-note {
+    margin-top: 18px;
+    font-size: 1.1em;
+    color: #007bff;
+}
+
+.research-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    background: #020202;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 16px;
+}
+
+.research-image {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+}
+
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
     .header-content {
