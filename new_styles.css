@@ -513,6 +513,26 @@ section {
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
+.camp-label {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: #007bff;
+    border-radius: 16px;
+    padding: 7px 18px;
+    margin: 10px 0 16px 0;
+    font-size: 1.15em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.13);
+    border: 1.5px solid #007bff;
+    letter-spacing: 1px;
+}
+.camp-label .camp-icon {
+    font-size: 1.3em;
+    margin-right: 8px;
+    filter: drop-shadow(0 0 2px #007bff);
+}
+
 .achievement-gallery {
     margin-top: 28px;
     background: #020202;
