@@ -1,3 +1,62 @@
+.education-certification {
+    margin-top: 30px;
+}
+.education-certification h3 {
+    color: #007bff;
+    margin-bottom: 18px;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+}
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.education-card {
+    background: #10131a;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,123,255,0.08);
+    padding: 24px 28px;
+    min-width: 270px;
+    flex: 1 1 320px;
+    color: #f4f4f4;
+    border-left: 5px solid #007bff;
+    position: relative;
+    transition: box-shadow 0.2s;
+}
+.education-card:hover {
+    box-shadow: 0 6px 24px rgba(0,123,255,0.18);
+}
+.education-card .edu-icon {
+    font-size: 2em;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    opacity: 0.18;
+}
+.education-card .edu-title {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #66b3ff;
+    margin-bottom: 6px;
+}
+.education-card .edu-school {
+    font-size: 1.05em;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.education-card .edu-degree {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+.education-card .edu-date {
+    font-size: 0.98em;
+    color: #b0b0b0;
+    margin-bottom: 0;
+}
 html {
     box-sizing: border-box;
 }
@@ -71,6 +130,9 @@ nav ul li a {
     padding: 10px 0;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    font-size: 0.98em;
+    letter-spacing: 0.01em;
 }
 
 nav ul li a.active,
